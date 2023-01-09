@@ -22,6 +22,7 @@ form.addEventListener("submit", (e) => {
         <p class="books">${book.author}</p>
         <button class="remove">Remove</button>
         <div class="border">
+        <hr>
     `;
   bookList.appendChild(bookItem);
 });
