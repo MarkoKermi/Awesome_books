@@ -25,11 +25,13 @@ form.addEventListener("submit", (e) => {
         <hr>
     `;
   bookList.appendChild(bookItem);
+  localStorage.setItem("books", JSON.stringify(books_list));
 });
 
 // Remove books from the List
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("remove")) {
     e.target.parentElement.remove();
+    localStorage.removeItem("books_list", JSON.stringify(books_list));
   }
 });
